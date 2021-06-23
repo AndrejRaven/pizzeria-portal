@@ -137,25 +137,33 @@ const PageNav = () => {
         </div>
         <Divider />
         <List>
-            <ListItem button component={NavLink} to={`${process.env.PUBLIC_URL}/tables`} activeClassName="active" exact>
+          <NavLink to={`${process.env.PUBLIC_URL}/tables`} activeClassName="active" exact>
+            <ListItem button key='tables'>
               <ListItemIcon>{<TableChartIcon />}</ListItemIcon>
-              <ListItemText primary={'Tables'} />
+              <ListItemText primary={'Tables'} /> 
             </ListItem>
-            <ListItem button component={NavLink} to={`${process.env.PUBLIC_URL}/orders`} activeClassName="active" exact>
+          </NavLink> 
+          <NavLink to={`${process.env.PUBLIC_URL}/orders`} activeClassName="active" exact>
+            <ListItem button key='orders'>
               <ListItemIcon>{<RestaurantIcon />}</ListItemIcon>
               <ListItemText primary={'Orders'} />
             </ListItem>
+          </NavLink>  
         </List>
         <Divider />
         <List>
-            <ListItem button component={NavLink} to={`${process.env.PUBLIC_URL}/kitchen`} activeClassName="active" exact>
+          <NavLink to={`${process.env.PUBLIC_URL}/kitchen`} activeClassName="active" exact>
+            <ListItem button key='kitchen'>
               <ListItemIcon>{<LocalPizzaIcon />}</ListItemIcon>
               <ListItemText primary={'Kitchen'} />
             </ListItem>
-            <ListItem button component={NavLink} to={`${process.env.PUBLIC_URL}/login`} activeClassName="active" exact>
+          </NavLink>  
+          <NavLink to={`${process.env.PUBLIC_URL}/login`} activeClassName="active" exact>
+            <ListItem button key='login'>
               <ListItemIcon>{<ExitToAppIcon />}</ListItemIcon>
               <ListItemText primary={'Logout'} />
             </ListItem>
+          </NavLink>
         </List>
       </Drawer>
       </div>

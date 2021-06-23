@@ -42,30 +42,6 @@ const Tables = ({id='123abc'}) => {
             className={classes.header}>
             Bookings
             </Typography>
-            <ListItem button component={Link} to={`${process.env.PUBLIC_URL}/order/${id}`}>
-            <ListItemText primary={`Order number: ${id}`} />
-            </ListItem>
-            <Divider />
-            <ListItem button component={Link} to={`${process.env.PUBLIC_URL}/order/${id}`}>
-            <ListItemText primary={`Order number: ${id}`} />
-            </ListItem>
-            <Divider />
-            <ListItem button component={Link} to={`${process.env.PUBLIC_URL}/order/${id}`}>
-            <ListItemText primary={`Order number: ${id}`} />
-            </ListItem>
-            <Divider />
-            <ListItem button component={Link} to={`${process.env.PUBLIC_URL}/order/${id}`}>
-            <ListItemText primary={`Order number: ${id}`} />
-            </ListItem>
-            <Divider />
-            <ListItem button component={Link} to={`${process.env.PUBLIC_URL}/order/${id}`}>
-            <ListItemText primary={`Order number: ${id}`} />
-            </ListItem>
-            <Divider />
-            <ListItem button component={Link} to={`${process.env.PUBLIC_URL}/order/${id}`}>
-            <ListItemText primary={`Order number: ${id}`} />
-            </ListItem>
-            <Divider />
         </List>
         <List className={classes.list} aria-label="orders">
             <Typography  
@@ -73,48 +49,11 @@ const Tables = ({id='123abc'}) => {
             className={classes.header}>
             Events
             </Typography>
-            <ListItem button component={Link} to={`${process.env.PUBLIC_URL}/order/${id}`}>
-            <ListItemText primary={`Order number: ${id}`} />
-            </ListItem>
-            <Divider />
-            <ListItem button component={Link} to={`${process.env.PUBLIC_URL}/order/${id}`}>
-            <ListItemText primary={`Table number: ${id},  `} />
-            </ListItem>
-            <Divider />
-            <ListItem button component={Link} to={`${process.env.PUBLIC_URL}/order/${id}`}>
-            <ListItemText primary={`Order number: ${id}`} />
-            </ListItem>
-            <Divider />
-            <ListItem button component={Link} to={`${process.env.PUBLIC_URL}/order/${id}`}>
-            <ListItemText primary={`Order number: ${id}`} />
-            </ListItem>
-            <Divider />
-            <ListItem button component={Link} to={`${process.env.PUBLIC_URL}/order/${id}`}>
-            <ListItemText primary={`Order number: ${id}`} />
-            </ListItem>
-            <Divider />
-            <ListItem button component={Link} to={`${process.env.PUBLIC_URL}/order/${id}`}>
-            <ListItemText primary={`Order number: ${id}`} />
-            </ListItem>
-            <Divider />
         </List>
         </div>
     </div>  
   );
 }
-
-// import React from 'react';
-// import styles from './Tables.scss';
-// import {Link} from 'react-router-dom';
-
-// const Tables = ({id='123abc'}) => (
-//     <div className={styles.component}>
-//         <h2>Tables view</h2>
-//         <Link to={`${process.env.PUBLIC_URL}/booking/${id}`}>booking {id}</Link>
-//         <Link to={`${process.env.PUBLIC_URL}/event/${id}`}>event {id}</Link>
-//     </div>
-// );
-
 
 
 export default Tables;
