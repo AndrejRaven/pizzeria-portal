@@ -170,39 +170,4 @@ const PageNav = () => {
   );
 }
 
-// import React from 'react';
-// import { NavLink} from 'react-router-dom';
-// import styles from './PageNav.scss';
-// import { Grid, ListItem } from '@material-ui/core';
-
-
-
-// const PageNav = (props) => (
-//     <Grid
-//         container
-//         direction="row"
-//         justify="center"
-//         alignItems="center"
-//     >
-//         <NavMenu>
-//         <ListItem button component={NavLink} to={`${process.env.PUBLIC_URL}/`} activeClassName="active" exact>
-//             Home
-//         </ListItem>
-//         <ListItem button component={NavLink} to={`${process.env.PUBLIC_URL}/login`} activeClassName="active" exact>
-//             Login
-//         </ListItem>
-//         <ListItem button component={NavLink} to={`${process.env.PUBLIC_URL}/kitchen`} activeClassName="active" exact>
-//             Kitchen
-//         </ListItem>
-//         <ListItem button component={NavLink} to={`${process.env.PUBLIC_URL}/orders`} activeClassName="active" exact>
-//             Orders
-//         </ListItem>
-//         <ListItem button component={NavLink} to={`${process.env.PUBLIC_URL}/tables`} activeClassName="active" exact>
-//             Tables
-//         </ListItem>
-//         </NavMenu>
-//     </Grid>
-// );
-
-
 export default PageNav;

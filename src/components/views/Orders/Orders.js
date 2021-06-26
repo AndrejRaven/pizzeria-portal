@@ -70,7 +70,7 @@ const Orders = () => {
                         className={classes.header}>
                         Table 1
                     </Typography>
-                    <Link className={classes.link} to={`${process.env.PUBLIC_URL}/order/new`} >
+                    <Link className={classes.link} to={`${process.env.PUBLIC_URL}/orders/order/new`} >
                         <Button variant='outlined' className={classes.button}
                             size='small' color='secondary' >New</Button>
                     </Link>
@@ -93,7 +93,7 @@ const Orders = () => {
                         className={classes.header}>
                         Table 2
                     </Typography>
-                    <Link className={classes.link} to={`${process.env.PUBLIC_URL}/order/new`} >
+                    <Link className={classes.link} to={`${process.env.PUBLIC_URL}/orders/order/new`} >
                         <Button variant='outlined' className={classes.button}
                             size='small' color='secondary' >New</Button>
                     </Link>
@@ -116,7 +116,7 @@ const Orders = () => {
                         className={classes.header}>
                         Table 3
                     </Typography>
-                    <Link className={classes.link} to={`${process.env.PUBLIC_URL}/order/new`} >
+                    <Link className={classes.link} to={`${process.env.PUBLIC_URL}/orders/order/new`} >
                         <Button variant='outlined' className={classes.button}
                             size='small' color='secondary' >New</Button>
                     </Link>
