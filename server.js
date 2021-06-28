@@ -5,12 +5,14 @@ const jsonServer = require('json-server');
 const server = jsonServer.create();
 const router = jsonServer.router('build/db/app.json');
 const middlewares = jsonServer.defaults({
-  static: 'build',
-  noCors: true,
+  static: '/',
+  noCors: false,
 });
 const port = process.env.PORT || 3131;
 
 server.get(/\/panel.*/, (req,res) =>{
+  res.header('Access-Control-Allow-Origin', '*');
+
   if(req.url == '/panel'){
     req.url += '/';
   }
@@ -30,6 +32,7 @@ server.use(function(req, res, next) {
   } else {
     req.url = '/build/front' + req.url;
   }
+
   next();
 });
 
