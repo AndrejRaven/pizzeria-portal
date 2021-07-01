@@ -49,7 +49,7 @@ const DialogActions = withStyles((theme) => ({
   },
 }))(MuiDialogActions);
 
-export default function PopupConfirm() {
+export default function DemoParamsDealer() {
   const [open, setOpen] = React.useState(false);
 
   const handleClickOpen = () => {
@@ -92,3 +92,6 @@ export default function PopupConfirm() {
     </div>
   );
 }
+
+
+
