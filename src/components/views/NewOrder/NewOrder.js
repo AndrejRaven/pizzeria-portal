@@ -8,6 +8,7 @@ import { Button } from '@material-ui/core';
 import Badge from '@material-ui/core/Badge';
 import TextField from '@material-ui/core/TextField';
 import PopupConfirm from '../../common/PopupConfirm/PopupConfirm';
+import DemoParamsDealer from '../../features/DemoParamsDeal';
 
 const useStyles = theme => ({
   root: {
@@ -88,7 +89,7 @@ class NewOrder extends React.Component {
                 </Grid>
                 <Grid item xs={6}>{props.children}</Grid>
                 <Grid item xs={3}>
-                  <PopupConfirm />
+                  <DemoParamsDealer />
                 </Grid>
               </Grid>
             </Paper>
